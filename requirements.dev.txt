@@ -1,0 +1,4 @@
+-r requirements.txt
+
+auto-py-to-exe==2.18.1
+pyinstaller-versionfile==2.0.0

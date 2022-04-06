@@ -1,0 +1,6 @@
+.idea/
+output/
+venv/
+__pycache__/
+*.pyc
+file_version_info.txt

@@ -1,0 +1,33 @@
+html {
+  touch-action: manipulation;
+}
+
+body {
+  overscroll-behavior: contain;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#sensor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #00A885;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+}
+
+#sensor.off {
+  pointer-events: none;
+  touch-action: none;
+}
