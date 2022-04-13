@@ -1,17 +1,26 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <!-- Meta -->
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
   <meta content="ie=edge" http-equiv="X-UA-Compatible">
-  <meta name="theme-color" content="#00A885">
-  <link rel="icon" type="image/png" sizes="1024x1024" href="/static/icon.png">
+  <meta content="#00A885" name="theme-color">
+  <!-- Favicon -->
+  <link href="/static/icon.png" rel="icon" sizes="1024x1024" type="image/png">
+  <!-- Stylesheet -->
   <link href="/static/styles.css" rel="stylesheet">
-  <link rel="manifest" href="/static/manifest/manifest.json">
-  <title>Mouseee</title>
+  <!-- Manifest -->
+  <link href="/static/manifest/manifest.json" rel="manifest">
+  <!-- Title -->
+  <title>Mouseee {{ version }}</title>
 </head>
 <body>
-<button class="off" id="sensor"></button>
+<!-- Touchpad -->
+<div id="touchpad" data-status="connecting"></div>
+<!-- Context -->
+<script>const version = "{{ version }}";</script>
+<!-- Script -->
 <script src="/static/scripts.js"></script>
 </body>
 </html>

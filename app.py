@@ -1,4 +1,4 @@
-from os import getcwd, path
+from os import getcwd, path, environ
 
 import mouse
 from flask import Flask, render_template, json
@@ -12,14 +12,14 @@ def get_path(file: str):
 
 
 app = Flask(__name__, template_folder=get_path("templates"), static_folder=get_path("static"))
-app.config.from_file(get_path("config.json"), load=json.load)
+app.config.from_file(get_path(environ.get("CONFIG", "config.json")), load=json.load)
 
 sock = Sock(app)
 
 
 @app.route("/")
 def index():
-    return render_template("index.html")
+    return render_template("index.html", version=__version__)
 
 
 @sock.route("/")
@@ -33,5 +33,5 @@ def handle(instance):
 
 
 if __name__ == "__main__":
-    print(f"Mouseee v{__version__}\n")
+    print(f"\n * Mouseee v{__version__}\n")
     app.run(host="0.0.0.0", port=5555)

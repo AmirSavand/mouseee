@@ -14,20 +14,29 @@ body {
   padding: 0;
 }
 
-#sensor {
+#touchpad {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: #00A885;
-  border: none;
-  border-radius: 0;
   padding: 0;
   margin: 0;
-}
-
-#sensor.off {
+  transition: all ease-in-out 250ms;
   pointer-events: none;
   touch-action: none;
+}
+
+#touchpad[data-status=closed] {
+  background: #ff4117;
+}
+
+#touchpad[data-status=connecting] {
+  background: #ffb424;
+}
+
+#touchpad[data-status=connected] {
+  background: #00A885;
+  pointer-events: unset;
+  touch-action: unset;
 }
