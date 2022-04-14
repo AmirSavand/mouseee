@@ -1,0 +1,22 @@
+{
+  "version": "0.1.15",
+  "source": "temp",
+  "output": "home",
+  "template": true,
+  "baseTemplate": null,
+  "nameAsTitle": false,
+  "firstLineAsTitle": false,
+  "cssVariables": {
+    "--primary": "#00A885",
+    "--body-color": "#666",
+    "--body-bg": "ivory",
+    "--heading-color": "#444",
+    "--content-bg": "white"
+  },
+  "extraHead": [
+    "<meta content=\"#00A885\" name=\"theme-color\">",
+    "<link href=\"/icon.png\" rel=\"icon\" sizes=\"1024x1024\" type=\"image/png\">"
+  ],
+  "headingsId": true,
+  "headingsIdSlugify": true
+}

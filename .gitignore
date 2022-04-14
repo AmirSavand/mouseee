@@ -1,6 +1,9 @@
 .idea/
 output/
 venv/
+node_modules/
+home/
+temp/
 __pycache__/
 *.pyc
 file_version_info.txt

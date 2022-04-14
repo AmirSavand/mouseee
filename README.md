@@ -1,10 +1,11 @@
-# Mouseee
+# [Mouseee](https://github.com/AmirSavand/mouseee)
 
 Control your mouse from your phone in the faster way possible.
 
 ## Installation
 
-Download the latest release on your computer (device you want to control).
+Download the [latest release](https://github.com/AmirSavand/mouseee/releases/latest)
+on your computer (device you want to control).
 
 ## Usage
 
@@ -17,7 +18,7 @@ Run the `Mouseee.exe` file, and you should see the local network address to visi
 
 ## Contact Us
 
-Email us at hello@savandbros.com and share your experience or feedback.
+Email us at [hello@savandbros.com](mailto:hello@savandbros.com) and share your experience or feedback.
 
 ## Built with
 

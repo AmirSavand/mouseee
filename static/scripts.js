@@ -147,7 +147,7 @@ function touchpadUpdateStatus() {
 
 /** Watch load event and setup everything. */
 window.addEventListener('load', () => {
-  console.log(`Mouseee v${version}`);
+  console.log(`Mouseee ${version}`);
   socketSetup();
   touchpadSetup();
 });

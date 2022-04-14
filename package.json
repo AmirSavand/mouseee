@@ -1,0 +1,7 @@
+{
+  "devDependencies": {
+    "fs-extra": "^10.0.1",
+    "htmlmin": "^0.0.7",
+    "index.md": "^0.1.18"
+  }
+}
